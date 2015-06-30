@@ -1,0 +1,32 @@
+{
+    "esnext": true,
+    "requireSpaceAfterKeywords": [
+        "do",
+        "for",
+        "if",
+        "else",
+        "switch",
+        "case",
+        "try",
+        "catch",
+        "void",
+        "while",
+        "with",
+        "return",
+        "typeof"
+    ],
+    "requireSpaceAfterBinaryOperators": [
+        "=", "==", "===",
+        "!=", "!==",
+        "&", "|", "&&", "||"
+    ],
+    "disallowSpaceBeforePostfixUnaryOperators": true,
+    "disallowMixedSpacesAndTabs": true,
+    "requireSpaceBeforeBlockStatements": true,
+    "requireParenthesesAroundIIFE": true,
+    "requireSpacesInConditionalExpression": true,
+    "disallowSpacesInCallExpression": true,
+    "excludeFiles": [
+        "vendor/*"
+    ]
+}

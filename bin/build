@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd $(dirname $0)/..
+target=tmp/transform-qrcode.zip
+rm -- $target
+7z a -tzip -xr!.git -xr!tmp $target .

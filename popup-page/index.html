@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>transform qrcode</title>
+    <style>
+    body {
+        display: flex;
+    }
+    .qrcode {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+    }
+    .nav h4 {
+        text-align: center;
+    }
+    .nav ul {
+        list-style: none;
+        padding-left: 0;
+        font-size: 13px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .nav li {
+        padding: .2em .8em;
+        border: 1px solid #e8e8e8;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    </style>
+
+<body>
+    <main id=main>
+        <div id=qrcode class=qrcode data-url></div>
+        <p id=info></p>
+    </main>
+    <nav id=nav class=nav>
+        <h4>transform</h4>
+        <ul id=ul>
+        </ul>
+    </nav>
+    <script src='/vendor/qrcode.js'></script>
+    <script src='popup.js'></script>
