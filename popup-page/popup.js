@@ -21,8 +21,9 @@ chrome.storage.local.get(null, function (settingObj) {
         nlTabs.push(ndTab)
     })
 
-    if (nlTabs.length)
-        return ndNav.removeAttribute('hidden')
+    if (!nlTabs.length)
+        return
+    ndNav.removeAttribute('hidden')
 
     nlTabs.forEach(function (ndTab) {
         ndNavUl.appendChild(ndTab)
