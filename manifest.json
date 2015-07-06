@@ -5,7 +5,7 @@
     , "minimum_chrome_version": "40"
     , "description": "Convert URI to qrcode"
     , "permissions": [ "tabs", "storage" ]
-    , "content_security_policy": "script-src 'self' 'unsafe-eval'"
+    , "content_security_policy": "script-src 'self' 'unsafe-eval';object-src 'none'"
 
     , "browser_action": {
         "default_popup": "popup-page/index.html",
