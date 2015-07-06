@@ -94,10 +94,10 @@ function userItem( id, obj, className ) {
     }, preChildren = {
         code: $( '<code contenteditable spellcheck="false">' ).text( obj.content || '' )
     }, btnGroupChildren = {
-        editButton: $( '<button class="editor-edit-item" data-toggle="button">' ).text( '编辑' ),
-        delAskButton: $( '<button class="editor-askdel-item">' ).text( '删除' ),
-        delCancelButton: $( '<button class="editor-canceldel-item btn-success">' ).text( '取消删除' ).hide(),
-        delConfirmButton: $( '<button class="editor-confirmdel-item btn-danger">' ).text( '确认删除' ).hide()
+        editButton: $( '<button class="editor-edit-item" data-toggle="button">' ).text( 'edit' ),
+        delAskButton: $( '<button class="editor-askdel-item">' ).text( 'delete' ),
+        delCancelButton: $( '<button class="editor-canceldel-item btn-success">' ).text( 'cancel' ).hide(),
+        delConfirmButton: $( '<button class="editor-confirmdel-item btn-danger">' ).text( 'confirm delete' ).hide()
     };
 
     var button, elt;
