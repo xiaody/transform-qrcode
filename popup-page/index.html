@@ -28,14 +28,17 @@
         border-radius: 4px;
         cursor: pointer;
     }
+    .info:empty {
+        display: none;
+    }
     </style>
 
 <body>
     <main id=main>
         <div id=qrcode class=qrcode data-url></div>
-        <p id=info></p>
+        <p id=info class=info></p>
     </main>
-    <nav id=nav class=nav>
+    <nav id=nav class=nav hidden>
         <h4>transform</h4>
         <ul id=ul>
         </ul>

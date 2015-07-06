@@ -3,11 +3,15 @@
 
 var qrcode,
     ndQrcode = document.getElementById('qrcode'),
+    ndNav = document.getElementById('nav'),
     ndNavUl = document.getElementById('ul')
 
 chrome.storage.local.get(null, function (settingObj) {
+    if (!settingObj)
+        return
+
     var nlTabs = [],
-        setting = settingObj['userJSEditor']
+        setting = settingObj['userJSEditor'] || {}
     Object.keys(setting).forEach(function (key) {
         var item = setting[key]
         if (!item.enabled) return
@@ -16,6 +20,9 @@ chrome.storage.local.get(null, function (settingObj) {
         ndTab.textContent = item.title
         nlTabs.push(ndTab)
     })
+
+    if (nlTabs.length)
+        return ndNav.removeAttribute('hidden')
 
     nlTabs.forEach(function (ndTab) {
         ndNavUl.appendChild(ndTab)
